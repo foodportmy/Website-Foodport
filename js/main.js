@@ -73,7 +73,7 @@
   }
 
   /* ---------- active nav link ---------- */
-  var navLinks = Array.prototype.slice.call(links.querySelectorAll("a"));
+  var navLinks = Array.prototype.slice.call(links.querySelectorAll('a[href^="#"]'));
   if ("IntersectionObserver" in window) {
     var spy = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
